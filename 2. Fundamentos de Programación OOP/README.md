@@ -2,7 +2,9 @@
 
 ¡Bienvenido/a a esta sección avanzada! 💻 Aquí exploraremos temas más complejos relacionados con programación orientada a objetos y características avanzadas en **Python**, **JavaScript** y **Java**.
 
-![Advanced Programming Animation](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2hmNzBjcjBnYWx3N3d4ZHB1ODh2cXZtb2xiY20yeWwwYm9jMXRwOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l36kU80xPf0ojG0Erg/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ2hmNzBjcjBnYWx3N3d4ZHB1ODh2cXZtb2xiY20yeWwwYm9jMXRwOSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l36kU80xPf0ojG0Erg/giphy.gif">
+</p>
 
 ---
 
