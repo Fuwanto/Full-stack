@@ -1,12 +1,10 @@
----
-
 ## 1. Decoradores
 
 Los decoradores son una característica poderosa en Python que te permiten modificar o extender el comportamiento de funciones, métodos o clases sin cambiarlos directamente. El `@` es simplemente la sintaxis para aplicar un decorador a una función o método.
 
 Veamos con más detalle cómo funcionan los decoradores en Python, y también cómo se comparan con sus equivalentes o enfoques en **Java** y **JavaScript**.
 
-------
+---
 
 ### Python
 
@@ -50,7 +48,7 @@ Después de llamar a la función
 - **`@property`**: Convierte un método en una propiedad de una clase.
 - **`@abstractmethod`**: Utilizado para declarar métodos abstractos en una clase abstracta.
 
-------
+---
 
 ### JavaScript
 
@@ -60,19 +58,19 @@ En **JavaScript**, los decoradores son una característica que **actualmente est
 
 ```javascript
 function miDecorador(target, key, descriptor) {
-    console.log("Decorador aplicado");
-    descriptor.value = function() {
-        console.log("Antes de ejecutar");
-        return descriptor.value.apply(this, arguments);
-    };
-    return descriptor;
+  console.log("Decorador aplicado");
+  descriptor.value = function () {
+    console.log("Antes de ejecutar");
+    return descriptor.value.apply(this, arguments);
+  };
+  return descriptor;
 }
 
 class Persona {
-    @miDecorador
-    saludar() {
-        console.log("Hola");
-    }
+  @miDecorador
+  saludar() {
+    console.log("Hola");
+  }
 }
 
 const persona = new Persona();
@@ -86,7 +84,7 @@ persona.saludar();
 
 Aunque los decoradores en JavaScript aún no son parte oficial del lenguaje, se pueden usar en entornos como **TypeScript**.
 
-------
+---
 
 ### Java
 
@@ -125,18 +123,18 @@ class MiClase {
 
 - A diferencia de los decoradores en Python, que modifican directamente el comportamiento de las funciones o métodos, las anotaciones en Java simplemente proporcionan metadatos que son procesados por otras herramientas.
 
-------
+---
 
 ### Comparación de Decoradores, Anotaciones y Similitudes en los Lenguajes
 
-| Característica                     | **Python (Decoradores)**                                     | **JavaScript (Decoradores - Propuesta)**                     | **Java (Anotaciones)**                                       |
-| ---------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| **Qué hacen**                      | Modifican directamente el comportamiento de funciones/métodos. | Modifican métodos y clases, pero aún no están estandarizados. | Proporcionan metadatos que son procesados por otras herramientas. |
-| **Sintaxis**                       | `@decorador` antes de la función o método.                   | `@decorador` antes de la función o método (propuesta).       | `@anotación` antes de la clase, método o variable.           |
-| **Soporte nativo**                 | Totalmente soportado en Python.                              | En propuesta (no nativo en JS puro).                         | Soportado en Java (requiere procesamiento de metadatos).     |
-| **Modificación de comportamiento** | Sí, modifican directamente el comportamiento.                | Sí, pero está en fase de propuesta y depende de frameworks como TypeScript. | No, solo proporcionan metadatos.                             |
+| Característica                     | **Python (Decoradores)**                                       | **JavaScript (Decoradores - Propuesta)**                                    | **Java (Anotaciones)**                                            |
+| ---------------------------------- | -------------------------------------------------------------- | --------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| **Qué hacen**                      | Modifican directamente el comportamiento de funciones/métodos. | Modifican métodos y clases, pero aún no están estandarizados.               | Proporcionan metadatos que son procesados por otras herramientas. |
+| **Sintaxis**                       | `@decorador` antes de la función o método.                     | `@decorador` antes de la función o método (propuesta).                      | `@anotación` antes de la clase, método o variable.                |
+| **Soporte nativo**                 | Totalmente soportado en Python.                                | En propuesta (no nativo en JS puro).                                        | Soportado en Java (requiere procesamiento de metadatos).          |
+| **Modificación de comportamiento** | Sí, modifican directamente el comportamiento.                  | Sí, pero está en fase de propuesta y depende de frameworks como TypeScript. | No, solo proporcionan metadatos.                                  |
 
-------
+---
 
 ### Conclusión
 
@@ -144,9 +142,9 @@ class MiClase {
 - **JavaScript** no tiene soporte nativo para decoradores (en su estándar actual), pero se pueden usar mediante herramientas como **TypeScript** y **Babel**, o mediante una sintaxis similar a la de Python en su propuesta de ECMAScript.
 - **Java** no tiene decoradores, pero tiene **anotaciones**, que permiten añadir metadatos a clases, métodos y variables, los cuales son procesados por herramientas externas o en tiempo de ejecución.
 
-------
+---
 
-## 2. Clases 
+## 2. Clases
 
 ### Python
 
@@ -215,7 +213,7 @@ persona2.saludar()  # Salida: Hola, mi nombre es Ana y tengo 18 años.
 - `@staticmethod` define un método que no depende de la instancia ni de la clase.
 - `@classmethod` define un método que toma `cls` (la clase) como primer argumento, en lugar de `self`.
 
-------
+---
 
 ### JavaScript
 
@@ -225,24 +223,24 @@ En **JavaScript**, las clases fueron introducidas en **ES6** (ECMAScript 2015) y
 
 ```javascript
 class Persona {
-    // Constructor de la clase
-    constructor(nombre, edad) {
-        this.nombre = nombre;  // Atributo de instancia
-        this.edad = edad;      // Atributo de instancia
-    }
+  // Constructor de la clase
+  constructor(nombre, edad) {
+    this.nombre = nombre; // Atributo de instancia
+    this.edad = edad; // Atributo de instancia
+  }
 
-    // Método de la clase
-    saludar() {
-        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
-    }
+  // Método de la clase
+  saludar() {
+    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+  }
 }
 
 // Crear una instancia de la clase Persona
 let persona1 = new Persona("Juan", 25);
 
 // Acceder a los atributos y métodos de la instancia
-console.log(persona1.nombre);  // Salida: Juan
-persona1.saludar();            // Salida: Hola, mi nombre es Juan y tengo 25 años.
+console.log(persona1.nombre); // Salida: Juan
+persona1.saludar(); // Salida: Hola, mi nombre es Juan y tengo 25 años.
 ```
 
 **Explicación:**
@@ -257,29 +255,29 @@ En JavaScript, los métodos estáticos se definen utilizando la palabra clave `s
 
 ```javascript
 class Persona {
-    // Constructor de la clase
-    constructor(nombre, edad) {
-        this.nombre = nombre;
-        this.edad = edad;
-    }
+  // Constructor de la clase
+  constructor(nombre, edad) {
+    this.nombre = nombre;
+    this.edad = edad;
+  }
 
-    // Método de instancia
-    saludar() {
-        console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
-    }
+  // Método de instancia
+  saludar() {
+    console.log(`Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`);
+  }
 
-    // Método estático
-    static esMayorDeEdad(edad) {
-        return edad >= 18;
-    }
+  // Método estático
+  static esMayorDeEdad(edad) {
+    return edad >= 18;
+  }
 }
 
 // Crear una instancia de la clase
 let persona2 = new Persona("Ana", 17);
-persona2.saludar();  // Salida: Hola, mi nombre es Ana y tengo 17 años.
+persona2.saludar(); // Salida: Hola, mi nombre es Ana y tengo 17 años.
 
 // Usar el método estático sin crear una instancia
-console.log(Persona.esMayorDeEdad(20));  // Salida: true
+console.log(Persona.esMayorDeEdad(20)); // Salida: true
 ```
 
 **Explicación:**
@@ -292,29 +290,29 @@ Las clases en JavaScript también soportan la **herencia** usando la palabra cla
 
 ```javascript
 class Animal {
-    constructor(nombre) {
-        this.nombre = nombre;
-    }
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
 
-    hablar() {
-        console.log(`${this.nombre} hace un sonido.`);
-    }
+  hablar() {
+    console.log(`${this.nombre} hace un sonido.`);
+  }
 }
 
 class Perro extends Animal {
-    constructor(nombre, raza) {
-        super(nombre);  // Llama al constructor de la clase base (Animal)
-        this.raza = raza;
-    }
+  constructor(nombre, raza) {
+    super(nombre); // Llama al constructor de la clase base (Animal)
+    this.raza = raza;
+  }
 
-    hablar() {
-        console.log(`${this.nombre} ladra.`);
-    }
+  hablar() {
+    console.log(`${this.nombre} ladra.`);
+  }
 }
 
 // Crear una instancia de la clase Perro
 let perro = new Perro("Max", "Labrador");
-perro.hablar();  // Salida: Max ladra.
+perro.hablar(); // Salida: Max ladra.
 ```
 
 **Explicación:**
@@ -323,7 +321,7 @@ perro.hablar();  // Salida: Max ladra.
 - `super(nombre)` llama al constructor de la clase `Animal` para inicializar el atributo `nombre`.
 - `Perro` sobrescribe el método `hablar()` para que tenga un comportamiento específico.
 
-------
+---
 
 ### Clases en Java
 
@@ -453,7 +451,7 @@ public class Main {
 - `super(nombre)` llama al constructor de la superclase (`Animal`), para inicializar el atributo `nombre`.
 - `Perro` sobrescribe el método `hablar()` para proporcionar un comportamiento específico.
 
-------
+---
 
 ## 3. Clases abstractas y los métodos abstractos
 
@@ -657,7 +655,7 @@ Aunque tanto las **clases abstractas** como las **interfaces** pueden ser utiliz
 3. **Instanciación**: Las clases abstractas no se pueden instanciar directamente; deben ser extendidas por clases concretas.
 4. **Herencia y Polimorfismo**: Las subclases heredan métodos abstractos y los sobrescriben para proporcionar una implementación específica.
 
-------
+---
 
 ### Python
 
@@ -706,7 +704,7 @@ Al igual que en Java, no se puede crear una instancia directamente de una clase 
 animal = Animal("Genérico")  # Error: TypeError: Can't instantiate abstract class Animal with abstract method hacer_sonido
 ```
 
-------
+---
 
 ### JavaScript
 
@@ -716,38 +714,38 @@ En **JavaScript**, **no existe soporte nativo para clases abstractas** o método
 
 ```javascript
 class Animal {
-    constructor(nombre) {
-        if (new.target === Animal) {
-            throw new TypeError("No se puede instanciar una clase abstracta");
-        }
-        this.nombre = nombre;
+  constructor(nombre) {
+    if (new.target === Animal) {
+      throw new TypeError("No se puede instanciar una clase abstracta");
     }
+    this.nombre = nombre;
+  }
 
-    // Método "abstracto"
-    hacerSonido() {
-        throw new Error("Método 'hacerSonido' debe ser implementado");
-    }
+  // Método "abstracto"
+  hacerSonido() {
+    throw new Error("Método 'hacerSonido' debe ser implementado");
+  }
 }
 
 class Perro extends Animal {
-    hacerSonido() {
-        console.log(`${this.nombre} ladra.`);
-    }
+  hacerSonido() {
+    console.log(`${this.nombre} ladra.`);
+  }
 }
 
 class Gato extends Animal {
-    hacerSonido() {
-        console.log(`${this.nombre} maulla.`);
-    }
+  hacerSonido() {
+    console.log(`${this.nombre} maulla.`);
+  }
 }
 
 let perro = new Perro("Max");
-perro.hacerSonido();  // Salida: Max ladra.
+perro.hacerSonido(); // Salida: Max ladra.
 
 let gato = new Gato("Luna");
-gato.hacerSonido();  // Salida: Luna maulla.
+gato.hacerSonido(); // Salida: Luna maulla.
 
-let animal = new Animal("Genérico");  // Error: No se puede instanciar una clase abstracta
+let animal = new Animal("Genérico"); // Error: No se puede instanciar una clase abstracta
 ```
 
 **Explicación:**
@@ -756,7 +754,7 @@ let animal = new Animal("Genérico");  // Error: No se puede instanciar una clas
 - **Métodos "abstractos"**: En lugar de usar un decorador como en Python o Java, lanzamos un error en el método `hacerSonido` para indicar que debe ser implementado en las subclases.
 - Las subclases `Perro` y `Gato` implementan el método `hacerSonido` para que sean funcionales.
 
-------
+---
 
 ### Resumen Comparativo
 
@@ -767,7 +765,7 @@ let animal = new Animal("Genérico");  // Error: No se puede instanciar una clas
 | **Instanciación de clase abstracta** | No se puede instanciar directamente | No se puede instanciar directamente                | Se puede simular lanzando errores en el constructor. |
 | **Sobrescritura de métodos**         | Se realiza con `@Override`          | Se realiza sobrescribiendo el método               | Se realiza sobrescribiendo el método.                |
 
-------
+---
 
 ### Conclusión
 
@@ -775,7 +773,7 @@ let animal = new Animal("Genérico");  // Error: No se puede instanciar una clas
 - En **JavaScript**, no hay soporte nativo para clases abstractas o métodos abstractos, pero se pueden simular mediante excepciones y validaciones en el código.
 - En **Java**, las clases abstractas y los métodos abstractos son una característica fundamental de la programación orientada a objetos y permiten una estructura muy organizada.
 
-------
+---
 
 ## 4. Herencia
 
@@ -839,7 +837,7 @@ print(perro.dueño)   # Salida: Juan
 
 En este caso, `Perro` hereda de dos clases: `Animal` y `Mascota`.
 
-------
+---
 
 ### JavaScript
 
@@ -851,29 +849,29 @@ En JavaScript, una clase puede heredar de otra utilizando la palabra clave `exte
 
 ```javascript
 class Animal {
-    constructor(nombre) {
-        this.nombre = nombre;
-    }
+  constructor(nombre) {
+    this.nombre = nombre;
+  }
 
-    hablar() {
-        console.log(`${this.nombre} hace un sonido.`);
-    }
+  hablar() {
+    console.log(`${this.nombre} hace un sonido.`);
+  }
 }
 
 class Perro extends Animal {
-    constructor(nombre, raza) {
-        super(nombre);  // Llama al constructor de la clase base (Animal)
-        this.raza = raza;
-    }
+  constructor(nombre, raza) {
+    super(nombre); // Llama al constructor de la clase base (Animal)
+    this.raza = raza;
+  }
 
-    hablar() {
-        console.log(`${this.nombre} ladra.`);
-    }
+  hablar() {
+    console.log(`${this.nombre} ladra.`);
+  }
 }
 
 // Crear un objeto de la clase Perro
 const perro = new Perro("Max", "Labrador");
-perro.hablar();  // Salida: Max ladra.
+perro.hablar(); // Salida: Max ladra.
 ```
 
 **Explicación:**
@@ -890,35 +888,35 @@ JavaScript no soporta **herencia múltiple** directamente como Python o C++. Sin
 
 ```javascript
 let Animal = {
-    hablar: function() {
-        console.log(`${this.nombre} hace un sonido.`);
-    }
+  hablar: function () {
+    console.log(`${this.nombre} hace un sonido.`);
+  },
 };
 
 let Mascota = {
-    cuidar: function() {
-        console.log(`${this.nombre} es cuidado por su dueño.`);
-    }
+  cuidar: function () {
+    console.log(`${this.nombre} es cuidado por su dueño.`);
+  },
 };
 
 class Perro {
-    constructor(nombre, raza) {
-        this.nombre = nombre;
-        this.raza = raza;
-    }
+  constructor(nombre, raza) {
+    this.nombre = nombre;
+    this.raza = raza;
+  }
 }
 
 // Usar mixins para agregar métodos a Perro
 Object.assign(Perro.prototype, Animal, Mascota);
 
 const perro = new Perro("Max", "Labrador");
-perro.hablar();  // Salida: Max hace un sonido.
-perro.cuidar();  // Salida: Max es cuidado por su dueño.
+perro.hablar(); // Salida: Max hace un sonido.
+perro.cuidar(); // Salida: Max es cuidado por su dueño.
 ```
 
 En este caso, usamos `Object.assign()` para copiar los métodos de los objetos `Animal` y `Mascota` al prototipo de la clase `Perro`, logrando una forma de **herencia múltiple**.
 
-------
+---
 
 ### Java
 

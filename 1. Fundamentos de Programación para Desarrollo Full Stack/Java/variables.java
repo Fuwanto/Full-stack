@@ -1,6 +1,6 @@
 // Declara tres variables de diferentes tipos primitivos y muestra sus valores en consola.
 
-public class variables {
+public class Variables {
     public static void main(String[] args) {
         int entero = 10;
         double decimal = 10.5;
