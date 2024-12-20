@@ -4,7 +4,9 @@
 
 A continuación, se detalla la estructura de los temas tratados:
 
-![Programming Animation](https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmNoZ2xiM2R0bTNsNGN4bmZweGxuN2NzeDNra3RvY2F0eXNqa2o0dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NV4cSrRYXXwfUcYnua/giphy.gif)
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmNoZ2xiM2R0bTNsNGN4bmZweGxuN2NzeDNra3RvY2F0eXNqa2o0dCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/NV4cSrRYXXwfUcYnua/giphy.gif">
+</p>
 
 ---
 
