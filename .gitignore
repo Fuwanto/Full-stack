@@ -344,3 +344,5 @@ yarn-debug.log*
 yarn-error.log*
 
 node_modules/
+
+.vscode/
