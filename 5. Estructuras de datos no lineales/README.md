@@ -3,10 +3,13 @@
 ¡Bienvenido/a! 🌳 En esta sección exploraremos estructuras de datos avanzadas como Árboles Binarios, Árboles AVL y Grafos, con implementaciones prácticas en **Python**, **JavaScript** y **Java**.
 
 <p align="center">
-    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGJycDdqczMyeTBkeHNlOG91Nzc3ODBjbXhveTR4NjFhNWc4MTdkYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Vi5TUmZz8LZb95j2xb/giphy.gif" width="200" height="225"/>
-    <img src="https://media.giphy.com/media/dECpk4uwYJtv17DS9f/giphy.gif?cid=790b7611bwl2m7etpwwbzqvctt6crxcxo95ohzibicepkyax&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="200" height="225"/>
-    <img src="https://media.giphy.com/media/YnexM9LwlwGu4Z1QnS/giphy.gif?cid=790b76110uirdopwv94lviwbh6dm3abw1bsq2bcd5iw2noeg&ep=v1_gifs_search&rid=giphy.gif&ct=g" width="200" height="225"/>
+    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZGJycDdqczMyeTBkeHNlOG91Nzc3ODBjbXhveTR4NjFhNWc4MTdkYyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/Vi5TUmZz8LZb95j2xb/giphy.gif" width="200" height="220"/>
+    <img src="https://media.giphy.com/media/dECpk4uwYJtv17DS9f/giphy.gif" width="200" height="220"/>
+    <img src="https://media.giphy.com/media/r1v5DUx0GzmpSfCMBc/giphy.gif" width="200" height="220"/>
 </p>
+
+
+
 
 ---
 
