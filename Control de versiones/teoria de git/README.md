@@ -1,4 +1,4 @@
-# 2. Fundamentos de Git
+# Fundamentos de Git
 
 ¡Bienvenido/a al mundo de Git! 🧑‍💻 En esta sección, exploraremos los fundamentos esenciales de **Git**, una de las herramientas más poderosas para el control de versiones. Aprenderemos sus características, terminología básica y cómo configurarlo para empezar a trabajar de manera eficiente con tus proyectos.
 
