@@ -3,7 +3,7 @@
 ¡Bienvenido/a a la sección de **Metodologías Ágiles**! 🌱 En esta parte exploraremos los conceptos fundamentales de Scrum, Kanban y sus herramientas asociadas, como **Jira**, **Trello** y **Notion**. ¡Prepárate para llevar tu gestión de proyectos al siguiente nivel! 🚀
 
 <p align="center">  
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYno3enhodXFzNXJhZHp0c2E3eTN6czMyeWFkcHNzbHNtMzFmN3AxciZlcD12MV9naWZzX3NlYXJjaCZjdD1n/RN1gWYNUg2kZYoSUBz/giphy.gif">  
+  <img src="https://media.giphy.com/media/reKoKNEqzn596/giphy.gif?cid=790b7611bz7zxhuqs5radztsa7y3zs32yadpsslsm31f7p1r&ep=v1_gifs_search&rid=giphy.gif&ct=g">  
 </p>
 
 ---
