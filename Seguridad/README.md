@@ -3,7 +3,7 @@
 ¡Bienvenido/a a esta sección sobre **seguridad**! 🔐 Aquí exploraremos conceptos clave, técnicas de protección y buenas prácticas para mantener tu código y aplicaciones seguras.
 
 <p align="center">
-  <img src="https://media.giphy.com/media/11fot0YzpQMA0g/giphy.gif?cid=ecf05e47dcir4buyd0lgjwf7m0t9j4dywl0idksdor0tungz&ep=v1_gifs_search&rid=giphy.gif&ct=g">
+  <img src="https://media.giphy.com/media/IeKgCDlpTqRQbZEhBF/giphy.gif?cid=790b7611ph4ryapm3zz1j9x6x1gnqzksk93jwdjnpwbkyapt&ep=v1_gifs_search&rid=giphy.gif&ct=g">
 </p>
 
 ---
